@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [quote, setQuote] = useState("")
   useEffect(() => {
-    fetch('https://auth-fastapi-3.onrender.com/')
+    fetch('https://api.kanye.rest/')
       .then((res) => {
         return res.json();
       }).then((data) => {
